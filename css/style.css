@@ -76,6 +76,17 @@ h2 {
   cursor: default;
 }
 
+.card-image {
+    height: auto;
+}
+
+@media (min-width: 1700px) {
+
+  .card-image {
+    height: 200px;
+  }
+
+}
 
 /* Second Parallax Section */
 
@@ -126,11 +137,6 @@ b {
   #contact-social > div > a > img {
     width: 5%
   }
-
-  /* Cards Section */
-  .card-image {
-  height: 200px;
-}
 
 }
 
