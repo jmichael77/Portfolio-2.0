@@ -18,6 +18,10 @@ body {
   width: 90px;
 }
 
+#jayd-nav {
+  height: 64px;
+}
+
 ul li a {
   color: #37474f;
   font-weight: 700;
