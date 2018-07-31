@@ -112,6 +112,11 @@ h2 {
   border-radius: 10%;
 }
 
+
+.profile-pic {
+  margin: 16px 0;
+}
+
 .about-me {
   font-size: 16px;
 }
@@ -120,14 +125,15 @@ b {
   font-size: 18px;
 }
 
-.move-down {
-  margin-top: 10%;
+#about > div.row.center-align {
+  margin-bottom: 0;
 }
+
 
 /* Third Parallax Section */
 
 #para-3 {
-  margin-top: 5%;
+  margin-top: 3%;
   height: 300px;
 }
 
