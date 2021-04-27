@@ -64,6 +64,10 @@ ul li a {
 }
 
 /* Modal & Form */
+.modal {
+  max-height: 80%;
+  width: 65%;
+}
 
 .modal-h4 {
 
@@ -72,6 +76,10 @@ ul li a {
 .modal-p {
   /* color: #E53935; */
   margin-bottom: 30px;
+}
+
+.modal .modal-footer {
+  padding: 0px 20px;
 }
 
 /* .select-label {
@@ -124,6 +132,14 @@ h2 {
 @media (max-width: 568px) {
   .img-circle {
     width: 100%;
+  }
+
+  #mobile-margin1 {
+    margin-bottom: 15px;
+  }
+
+  #mobile-margin2 {
+    margin-bottom: 15px;
   }
 
 }

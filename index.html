@@ -50,7 +50,7 @@
       <div class="row">
         <div class="col s12 l8 offset-l2 white-text">
           <h4 class="info center-align valign"> <span id="my-name">James Michael</span> <br>
-          Front-End Web Devloper <br> Based In London, England </h4>
+          Front-End Web Developer <br> Based In London, England </h4>
         </div>
       </div> <!-- info row -->
 
@@ -64,83 +64,70 @@
 
       <!-- Modal Structure -->
       <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4 class="modal-h4">Retrieve a Quote</h4>
-          <p class="modal-p">Please fill in the form below and we'll get back to you with a quote shortly.</p>
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">Name</label>
+        <form action="https://formspree.io/f/xwkavkwe" method="POST">
+          <div class="modal-content">
+            <h4 class="modal-h4">Retrieve a Quote</h4>
+            <p class="modal-p">Please fill in the form below and we'll get back to you with a quote shortly.</p>
+            <div class="row">
+              <div class="col s12">
+                <div class="row">
+                  <div class="input-field col s12 m6">
+                    <input id="first_name" type="text" name="Name" class="validate" required>
+                    <label for="first_name">Name</label>
+                  </div>
+                  <div class="input-field col s12 m6">
+                    <input id="email" type="email" name="Email" class="validate" required>
+                    <label for="email">Email</label>
+                  </div>
                 </div>
-                <div class="input-field col s6">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" name="Brief" class="materialize-textarea" required></textarea>
+                    <label for="textarea1">Tell us about your website needs</label>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="textarea1">Tell us about your company and website needs</label>
+                <div class="row">
+                  <div id="mobile-margin1" class="col s12 m6">
+                    <select class="browser-default" name="Do you need a Domain?" required>
+                      <option value="" disabled selected>Do you need a Domain?</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                      <option value="I don't know">Not sure</option>
+                    </select>
+                  </div>
+                  <div class="col s12 m6">
+                    <select class="browser-default" name="Do you need hosting services?" required>
+                      <option value="" disabled selected>Do you need hosting services?</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                      <option value="I don't know">Not sure</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col s6">
-                  <select class="browser-default">
-                    <option value="" disabled selected>Do you need a Domain?</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                    <option value="I don't know">Not sure</option>
-                  </select>
-                </div>
-                <div class="col s6">
-                  <select class="browser-default">
-                    <option value="" disabled selected>Do you need hosting services?</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                    <option value="I don't know">Not sure</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6">
-                  <select class="browser-default">
-                    <option value="" disabled selected>Are you selling any products online?</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </div>
-                <div class="col s6">
-                  <select class="browser-default">
-                    <option value="" disabled selected>Do you need access to edit the site yourself?</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6">
-                  <select class="browser-default">
-                    <option value="" disabled selected>Are you selling any products online?</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </div>
-                <div class="col s6">
-                  <select class="browser-default">
-                    <option value="" disabled selected>Do you need access to edit the site yourself?</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </select>
+                <div class="row">
+                  <div id="mobile-margin2" class="col s12 m6">
+                    <select class="browser-default" name="Are you selling any products online?" required>
+                      <option value="" disabled selected>Are you selling any products online?</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                  <div class="col s12 m6">
+                    <select class="browser-default" name="Do you need access to edit the site yourself?" required>
+                      <option value="" disabled selected>Do you need access to edit the site yourself?</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
+          <div class="modal-footer">
+            <a class="modal-close waves-effect waves-white btn-flat">Close</a>
+            <button type="submit" class="waves-effect waves-white btn-flat red white-text">Submit</button>
+          </div>
+        </form>
       </div>
 
     </div> <!-- container -->
@@ -191,7 +178,7 @@
             <span class="card-title activator grey-text text-darken-4">
               HSBC IO<i class="material-icons right">more_vert</i>
             </span>
-            <p><a target="_blank" href="https://hsbcprivatebank.stoneshot.com/investment-outlook-d/tc.asp">See project</a></p>
+            <p><a target="_blank" href="https://hsbcprivatebank.stoneshot.com/investment-outlook/tc.asp">See project</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">More Info
@@ -202,7 +189,7 @@
               <br>
               There a total of 3 versions of the site: English, Simplified Chinese and Traditional Chinese.
             <p>
-              <a target="_blank" href="https://hsbcprivatebank.stoneshot.com/investment-outlook-d/tc.asp">See project</a>
+              <a target="_blank" href="https://hsbcprivatebank.stoneshot.com/investment-outlook/tc.asp">See project</a>
             </p>
           </div>
         </div>
@@ -412,8 +399,9 @@
     <div class="container">
       <div class="row">
         <div class="col s12 l12 center-align">
-          <a data-target="modal1" class="waves-effect btn-large hoverable red darken-1 modal-trigger">
-          <i class="material-icons right">assignment</i>Get a quote
+          <a class="waves-effect btn-large hoverable red darken-1"
+          href="mailto:jmichaely2k7@outlook.com">
+            <i class="material-icons right">email</i>Get in touch now
           </a>
         </div>
       </div> <!-- btn row -->
@@ -462,9 +450,8 @@
     <div class="container">
       <div class="row">
         <div class="col s12 l12 center-align">
-          <a class="waves-effect btn-large hoverable red darken-1"
-          href="mailto:jmichaely2k7@outlook.com">
-            <i class="material-icons right">email</i>Get in touch now
+          <a data-target="modal1" class="waves-effect btn-large hoverable red darken-1 modal-trigger">
+          <i class="material-icons right">assignment</i>Get a quote
           </a>
         </div>
       </div> <!-- btn row -->
