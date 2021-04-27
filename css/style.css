@@ -34,7 +34,7 @@ ul li a {
 /* First Parallax Section */
 
 .move-up {
-  margin-bottom: 10%; 
+  margin-bottom: 10%;
 }
 
 #para-1-img {
@@ -63,6 +63,22 @@ ul li a {
   transform: rotate(180deg);
 }
 
+/* Modal & Form */
+
+.modal-h4 {
+
+}
+
+.modal-p {
+  /* color: #E53935; */
+  margin-bottom: 30px;
+}
+
+/* .select-label {
+  font-size: 16px;
+  margin-bottom: 30px;
+} */
+
 /* Work Highlights Section */
 
 h2 {
@@ -82,6 +98,10 @@ h2 {
 
 .card-image {
     height: auto;
+}
+
+.project-img {
+  height: 160px
 }
 
 @media (min-width: 1700px) {

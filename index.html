@@ -10,10 +10,10 @@
   <!-- Import Google Icon Font
   =====================================-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS 
+  <!-- Compiled and minified CSS
   =====================================-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-  <!-- My Stylesheet 
+  <!-- My Stylesheet
   =====================================-->
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <!-- Emoji Stylesheet -->
@@ -33,7 +33,7 @@
   =====================================-->
    <nav>
     <div id="jayd-nav" class="nav-wrapper blue-grey lighten-5">
-      <a href="index.html"> 
+      <a href="index.html">
         <img id="logo" src="./img/jayd-logo.png" alt="logo"> </a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#work">Work</a></li>
@@ -49,18 +49,100 @@
     <div class="container move-up">
       <div class="row">
         <div class="col s12 l8 offset-l2 white-text">
-          <h4 class="info center-align valign"> <span id="my-name">James Michael</span> <br> 
+          <h4 class="info center-align valign"> <span id="my-name">James Michael</span> <br>
           Front-End Web Devloper <br> Based In London, England </h4>
         </div>
       </div> <!-- info row -->
 
       <div class="row">
         <div class="col s12 l12 center-align">
-          <a href="#work">
-            <i id="plane-animate" class="material-icons medium">local_airport</i>
+          <a data-target="modal1" class="waves-effect btn-large hoverable red darken-1 modal-trigger">
+          <i class="material-icons right">assignment</i>Get a quote
           </a>
         </div>
       </div> <!-- btn row -->
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4 class="modal-h4">Retrieve a Quote</h4>
+          <p class="modal-p">Please fill in the form below and we'll get back to you with a quote shortly.</p>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Tell us about your company and website needs</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s6">
+                  <select class="browser-default">
+                    <option value="" disabled selected>Do you need a Domain?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="I don't know">Not sure</option>
+                  </select>
+                </div>
+                <div class="col s6">
+                  <select class="browser-default">
+                    <option value="" disabled selected>Do you need hosting services?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="I don't know">Not sure</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s6">
+                  <select class="browser-default">
+                    <option value="" disabled selected>Are you selling any products online?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+                <div class="col s6">
+                  <select class="browser-default">
+                    <option value="" disabled selected>Do you need access to edit the site yourself?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s6">
+                  <select class="browser-default">
+                    <option value="" disabled selected>Are you selling any products online?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+                <div class="col s6">
+                  <select class="browser-default">
+                    <option value="" disabled selected>Do you need access to edit the site yourself?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+
     </div> <!-- container -->
     <div class="parallax"><img id="para-1-img" src="./img/para-1.jpg"></div>
   </div> <!-- parallax container -->
@@ -79,25 +161,21 @@
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/boris-bikes.png">
+            <img class="activator project-img" src="./img/my-portfolio.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
-              Boris Bikes<i class="material-icons right">more_vert</i>
+              PORTFOLIO<i class="material-icons right">more_vert</i>
             </span>
-            <p><a href="https://boris-bike.herokuapp.com/" target="_blank">See project</a></p>
+            <p><a href="#">See project</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">More Info
-            <i class="em em-bike"></i>
+            <span class="card-title grey-text text-darken-4">
+            <i class="em em-wink"></i>
             <i class="material-icons right">close</i></span>
             <p>
-              A web app that finds all the Santander bike docking stations in Central London. It shows you the nearest bike docks in your area and how many bikes are available at all stations. The app can also give you directions to the dock of your choice. 
-              <br>
-              <br>
-              Built mostly using Vanilla JavaScript &amp; jQuery.
-              <br>
-              <br> Source Code On <a href="https://github.com/jmichael77/boris-bikes" target="_blank"> GitHub </a>
+              <br> Source Code On
+              <a href="https://github.com/jmichael77/Portfolio-2.0" target="_blank"> GitHub </a>
             </p>
           </div>
         </div>
@@ -107,51 +185,55 @@
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/relaxr.png">
+            <img class="activator project-img" src="./img/io.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
-              GA Assignments<i class="material-icons right">more_vert</i>
+              HSBC IO<i class="material-icons right">more_vert</i>
             </span>
-            <p><a href="https://github.com/jmichael77/FEWD" target="_blank">See project</a></p>
+            <p><a target="_blank" href="https://hsbcprivatebank.stoneshot.com/investment-outlook-d/tc.asp">See project</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">More Info
-            <i class="em em-books"></i>
+            <i class="em em-bank"></i>
             <i class="material-icons right">close</i></span>
-            <p> 
-              When I was studying at General Assembly we had been given set tasks to build within a tight deadline. Some of the tasks we had to complete: A GitHub App, Rock Paper Scissors Game, Naughts and Crosses and a few other simple web pages. Check out all of the assignments on my GitHub! 
+            <p> A high profile website built for HSBC Hong Kong. The site allows contacts to register for popular HSBC Webinars.
               <br>
-              <br> 
-              Source Code On <a href="https://github.com/jmichael77/FEWD" target="_blank"> GitHub </a> 
+              <br>
+              There a total of 3 versions of the site: English, Simplified Chinese and Traditional Chinese.
+            <p>
+              <a target="_blank" href="https://hsbcprivatebank.stoneshot.com/investment-outlook-d/tc.asp">See project</a>
             </p>
           </div>
         </div>
-      </div> <!-- card-2 col -->
+      </div>  <!-- card-2 col -->
 
       <!-- Card 3 -->
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/my-portfolio.png">
+            <img class="activator project-img" src="./img/asia-newsletter.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
-              My Portfolio<i class="material-icons right">more_vert</i>
+              HSBC NL<i class="material-icons right">more_vert</i>
             </span>
-            <p><a href="#">See project</a></p>
+            <p><a href="http://info.hsbcprivatebank.com/newsletter-site/index-september.html" target="_blank">See project</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-            <i class="em em-wink"></i>
+            <span class="card-title grey-text text-darken-4">More Info
+            <i class="em em-books"></i>
             <i class="material-icons right">close</i></span>
             <p>
-              <br> Source Code On 
-              <a href="https://github.com/jmichael77/Portfolio-2.0" target="_blank"> GitHub </a> 
+              A newsletter site that was built for HSBC Private Bank Asia. The template is updated every month with new content and is shared with prospects.
+              <br>
+              <br>
+              <a href="http://info.hsbcprivatebank.com/newsletter-site/index-september.html" target="_blank">See project</a>
             </p>
           </div>
         </div>
-      </div> <!-- card-3 col -->
+      </div>
+      <!-- card-3 col -->
 
     </div> <!-- cards 1,2,3 row -->
 
@@ -162,7 +244,7 @@
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/is-it.png">
+            <img class="activator project-img" src="./img/is-it.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
@@ -186,22 +268,23 @@
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/kaizen-nld.png">
+            <img class="activator project-img" src="./img/fps.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
-              Kaizen Ticketing<i class="material-icons right">more_vert</i>
+              FPS Brand<i class="material-icons right">more_vert</i>
             </span>
-            <p><a href="http://www.kaizenticketing.com/nld-2018/" target="_blank">See project</a></p>
+            <p><a href="https://fpsbrand.com/" target="_blank">See project</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">More Info
-            <i class="em em-ticket"></i>
+            <i class="em em-camera"></i>
             <i class="material-icons right">close</i></span>
-            <p> A simple landing page built for Kaizen Ticketing Solutions LTD using the same styling from their main site.
-            <br>
-            <br>
-            Source Code On <a href="#" target="_blank"> GitHub </a> </p>
+            <p>
+              A website that was built for a recent client. The main purpose is to sell professional camera equipment & electronics.
+              <br>
+              <br> Source Code On <a href="https://github.com/jmichael77/FPSBrand" target="_blank"> GitHub </a>
+            </p>
           </div>
         </div>
       </div> <!-- card-5 col -->
@@ -210,7 +293,7 @@
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/interview.png">
+            <img class="activator project-img" src="./img/interview.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
@@ -222,14 +305,14 @@
             <span class="card-title grey-text text-darken-4">More Info
             <i class="em em-blue_heart"></i>
             <i class="material-icons right">close</i></span>
-            <p> I built this website template to test my ability to make something completely from scratch without any css frameworks etc. 
+            <p> I built this website template to test my ability to make something completely from scratch without any css frameworks etc.
             <br>
-            <br> 
+            <br>
             It gets the article information from an array in JavaScript.
             <br>
-            <br> 
-            Source Code On 
-            <a href="https://github.com/jmichael77/interview-test-1" target="_blank"> GitHub </a> 
+            <br>
+            Source Code On
+            <a href="https://github.com/jmichael77/interview-test-1" target="_blank"> GitHub </a>
             </p>
           </div>
         </div>
@@ -239,12 +322,12 @@
 
     <!-- cards 7,8,9 row -->
     <div class="row">
-      
+
       <!-- Card 7 -->
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/sram-email.png">
+            <img class="activator project-img" src="./img/sram-email.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
@@ -268,7 +351,7 @@
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/hsbc-email.png">
+            <img class="activator project-img" src="./img/hsbc-email.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
@@ -282,9 +365,9 @@
             <i class="material-icons right">close</i></span>
             <p> A fully responsive Newsletter template built for HSBC. The template has been litmus tested across multiple email clients and devices.
             <br>
-            <br> 
-            Source Code On 
-            <a href="https://github.com/jmichael77/HSBC-Newsletter" target="_blank"> GitHub </a> 
+            <br>
+            Source Code On
+            <a href="https://github.com/jmichael77/HSBC-Newsletter" target="_blank"> GitHub </a>
             </p>
           </div>
         </div>
@@ -294,7 +377,7 @@
       <div class="col s12 l4">
         <div class="card z-depth-3 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="./img/apple-email.png">
+            <img class="activator project-img" src="./img/apple-email.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">
@@ -310,9 +393,9 @@
             <br>
             (Example)
             <br>
-            <br> 
-            Source Code On 
-            <a href="https://github.com/jmichael77/Apple-Keynote-Email" target="_blank"> GitHub </a> 
+            <br>
+            Source Code On
+            <a href="https://github.com/jmichael77/Apple-Keynote-Email" target="_blank"> GitHub </a>
             </p>
           </div>
         </div>
@@ -329,8 +412,8 @@
     <div class="container">
       <div class="row">
         <div class="col s12 l12 center-align">
-          <a class="waves-effect btn-large hoverable red darken-1" href="james_cv.pdf" download>
-          <i class="material-icons right">assignment</i>Download my cv
+          <a data-target="modal1" class="waves-effect btn-large hoverable red darken-1 modal-trigger">
+          <i class="material-icons right">assignment</i>Get a quote
           </a>
         </div>
       </div> <!-- btn row -->
@@ -356,7 +439,7 @@
         <p class="about-me">
           <b>Summary:</b>
           <br>
-          I'm a friendly, approachable person who gets along well with others. I work well in a team and independently. I have a huge passion for designing and creating things. 
+          I'm a friendly, approachable person who gets along well with others. I work well in a team and independently. I have a huge passion for designing and creating things.
           <br>
           <br>
           My favourite hobby is to code and learn new computer languages, libraries and frameworks.
@@ -367,7 +450,7 @@
           <b>Interests:</b>
           <br>
           Web Development, Photography, Skateboarding, Gym and Travelling.
-          <br> 
+          <br>
         </p>
       </div>
     </div> <!-- image & paragraph row -->
@@ -379,7 +462,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12 l12 center-align">
-          <a class="waves-effect btn-large hoverable red darken-1" 
+          <a class="waves-effect btn-large hoverable red darken-1"
           href="mailto:jmichaely2k7@outlook.com">
             <i class="material-icons right">email</i>Get in touch now
           </a>
@@ -395,28 +478,28 @@
   <div class="container">
     <div id="contact-social" class="row center-align">
       <div class="col s12 l12">
-        <a href="https://www.facebook.com/profile.php?id=100016886084043" target="_blank"> 
-          <img class="social" src="./img/social/facebook.svg" alt="facebook"> 
+        <a href="https://www.facebook.com/profile.php?id=100016886084043" target="_blank">
+          <img class="social" src="./img/social/facebook.svg" alt="facebook">
         </a>
         <a href="https://www.instagram.com/jmichael.77/" target="_blank">
-          <img class="social" src="./img/social/instagram.svg" alt="instagram"> 
+          <img class="social" src="./img/social/instagram.svg" alt="instagram">
         </a>
-        <a href="https://www.linkedin.com/in/james-michael-70b504142/" target="_blank"> 
-          <img class="social" src="./img/social/linkedin.svg" alt="linkedin"> 
+        <a href="https://www.linkedin.com/in/james-michael-70b504142/" target="_blank">
+          <img class="social" src="./img/social/linkedin.svg" alt="linkedin">
         </a>
-        <a href="https://github.com/jmichael77" target="_blank"> 
-          <img class="social" src="./img/social/github.svg" alt="github"> 
+        <a href="https://github.com/jmichael77" target="_blank">
+          <img class="social" src="./img/social/github.svg" alt="github">
         </a>
       </div>
     </div>
   </div> <!-- contact container -->
 
 
- <!-- JAVASCRIPT 
+ <!-- JAVASCRIPT
   ===========================================================================-->
   <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js" 
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
